@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla HTML Básica</title>
+    
+    <!-- Cargar Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuración de la fuente Inter -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex flex-col items-center justify-center p-6">
+
+    <div class="w-full max-w-4xl bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+        
+        <!-- Encabezado -->
+        <header class="bg-blue-600 text-white p-6 rounded-t-lg">
+            <h1 class="text-3xl font-bold">Mi Página Web</h1>
+            <p class="mt-1">Una plantilla HTML moderna y responsiva.</p>
+        </header>
+
+        <!-- Contenido Principal -->
+        <main class="p-6 md:p-8">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-500 dark:text-blue-400">¡Bienvenido!</h2>
+            <p class="mb-4">
+                Este es el contenido principal de tu página. Puedes empezar a editar este archivo
+                <code>index.html</code> para añadir tu propio contenido.
+            </p>
+            <p class="mb-4">
+                Esta plantilla utiliza <a href="https://tailwindcss.com/" class="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Tailwind CSS</a> para los estilos.
+                Todos los elementos, como este contenedor, tienen esquinas redondeadas (<code>rounded-lg</code>).
+            </p>
+
+            <!-- Ejemplo de tarjeta -->
+            <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg shadow-inner">
+                <h3 class="text-lg font-semibold mb-2">Sección de Ejemplo</h3>
+                <p class="text-sm">
+                    Aquí puedes poner componentes, tarjetas, o cualquier otro elemento que necesites.
+                </p>
+                <button class="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">
+                    Un botón de ejemplo
+                </button>
+            </div>
+        </main>
+
+        <!-- Pie de Página -->
+        <footer class="bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 text-center p-4 rounded-b-lg border-t border-gray-200 dark:border-gray-600">
+            <p>&copy; <span id="current-year"></span> Tu Nombre o Compañía. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+
+    <!-- Script simple para el año actual en el footer -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
